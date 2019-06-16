@@ -35,6 +35,8 @@ function FACTION:OnNameChanged(client, oldValue, value)
 		character:SetModel("models/player/hydro/b1_battledroids/assault/b1_battledroid_assault.mdl")
 		local item = inventory:HasItem("b2b")
 		item:Remove()
+		local item2 = inventory:HasItem("5e")
+		item2:Remove()
 		inventory:Add("e5", 1)
 	elseif (!Schema:IsCombineRank(oldValue, "B2") and Schema:IsCombineRank(value, "B2")) then
 		character:JoinClass(CLASS_MPU)
@@ -44,7 +46,12 @@ function FACTION:OnNameChanged(client, oldValue, value)
 		inventory:Add("b2b", 1)
 	elseif (!Schema:IsCombineRank(oldValue, "CMND") and Schema:IsCombineRank(value, "CMND")) then
 		character:JoinClass(CLASS_EMP)
-		character:SetModel("models/sally/tkaro/bx_commando_droid.mdl")
+		character:SetModel("models/tfa/comm/gg/npc_cit_sw_droid_commando.mdl")
+		local item = inventory:HasItem("b2b")
+		item:Remove()
+		local item2 = inventory:HasItem("5e")
+		item2:Remove()
+		inventory:Add("e5", 1)
 	elseif (!Schema:IsCombineRank(oldValue, "DvL") and Schema:IsCombineRank(value, "DvL")) then
 		character:SetModel("models/eliteshockcp.mdl")
 	elseif (!Schema:IsCombineRank(oldValue, "SeC") and Schema:IsCombineRank(value, "SeC")) then
