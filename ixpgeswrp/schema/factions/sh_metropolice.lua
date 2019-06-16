@@ -28,34 +28,26 @@ end
 
 function FACTION:OnNameChanged(client, oldValue, value)
 	local character = client:GetCharacter()
-	local inventory = character:GetInventory()
 
 	if (!Schema:IsCombineRank(oldValue, "B1") and Schema:IsCombineRank(value, "B1")) then
 		character:JoinClass(CLASS_MPR)
 		character:SetModel("models/player/hydro/b1_battledroids/assault/b1_battledroid_assault.mdl")
-		local item = inventory:HasItem("b2b")
-		item:Remove()
-		local item2 = inventory:HasItem("5e")
-		item2:Remove()
-		inventory:Add("e5", 1)
+		client:SetMaxHealth(100)
+		client:SetHealth(100)
+		client:SetArmor(50)
 	elseif (!Schema:IsCombineRank(oldValue, "B2") and Schema:IsCombineRank(value, "B2")) then
 		character:JoinClass(CLASS_MPU)
 		character:SetModel("models/player/hydro/b2_battledroid/b2_battledroid.mdl")
-		local item = inventory:HasItem("e5")
-		item:Remove()
-		inventory:Add("b2b", 1)
+		client:SetMaxHealth(200)
+		client:SetHealth(200)
+		client:SetArmor(200)
 	elseif (!Schema:IsCombineRank(oldValue, "CMND") and Schema:IsCombineRank(value, "CMND")) then
 		character:JoinClass(CLASS_EMP)
 		character:SetModel("models/tfa/comm/gg/npc_cit_sw_droid_commando.mdl")
-		local item = inventory:HasItem("b2b")
-		item:Remove()
-		local item2 = inventory:HasItem("5e")
-		item2:Remove()
-		inventory:Add("e5", 1)
-	elseif (!Schema:IsCombineRank(oldValue, "DvL") and Schema:IsCombineRank(value, "DvL")) then
-		character:SetModel("models/eliteshockcp.mdl")
-	elseif (!Schema:IsCombineRank(oldValue, "SeC") and Schema:IsCombineRank(value, "SeC")) then
-		character:SetModel("models/sect_police2.mdl")
+		client:SetMaxHealth(150)
+		client:SetHealth(150)
+		client:SetArmor(150)
+	
 	elseif (!Schema:IsCombineRank(oldValue, "SCN") and Schema:IsCombineRank(value, "SCN")
 	or !Schema:IsCombineRank(oldValue, "SHIELD") and Schema:IsCombineRank(value, "SHIELD")) then
 		character:JoinClass(CLASS_MPS)
