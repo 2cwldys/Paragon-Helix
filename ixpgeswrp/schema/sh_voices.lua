@@ -376,6 +376,10 @@ Schema.voices.Add("Combine", "YEP", "Yep.", "npc/metropolice/mc1ans_yep.wav")
 Schema.voices.Add("Combine", "YOU CAN GO", "Alright, you can go.", "npc/metropolice/vo/allrightyoucango.wav")
 Schema.voices.Add("Combine", "ZONE", "Zone!", "npc/metropolice/vo/zone.wav")
 
+Schema.voices.Add("Combine", "Roger", "Roger Roger.", "weapons/droid/roger.mp3")
+Schema.voices.Add("Combine", "Ohoh", "Oh oh.", "weapons/droid/ohoh.mp3")
+Schema.voices.Add("Combine", "Fire", "Prepare to fire.", "weapons/droid/fire.mp3")
+
 Schema.voices.Add("Dispatch", "ACTIVITY LEVEL 1", "You are charged with anti-civil activity level: ONE. Protection-unit prosecution code: DUTY, SWORD, OPERATE.", "npc/overwatch/cityvoice/f_anticivil1_5_spkr.wav")
 Schema.voices.Add("Dispatch", "ANTI-CITIZEN", "Attention, ground-units: Anti-citizen reported in this community. Code: LOCK, CAUTERIZE, STABILIZE.", "npc/overwatch/cityvoice/f_anticitizenreport_spkr.wav")
 Schema.voices.Add("Dispatch", "ANTI-CIVIL EVIDENCE", "Protection-team, alert: Evidence of anti-civil activity in this community. Code: ASSEMBLE, CLAMP, CONTAIN.", "npc/overwatch/cityvoice/f_anticivilevidence_3_spkr.wav")
