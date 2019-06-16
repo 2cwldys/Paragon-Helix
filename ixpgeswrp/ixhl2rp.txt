@@ -1,7 +1,0 @@
-"gamemode"
-{
-	"base"		"helix"
-	"title"		"ixhl2rp"
-	"author"	"nebulous.cloud"
-	"menusystem" "1"
-}
