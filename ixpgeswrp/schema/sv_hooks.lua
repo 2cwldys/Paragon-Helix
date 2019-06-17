@@ -84,6 +84,9 @@ function Schema:PostPlayerLoadout(client)
 		else
 			client:SetArmor(100)
 		end
+	elseif (client:Team() == FACTION_JEDI) then
+		client:SetMaxHealth(500)
+		client:SetHealth(500)
 
 		local factionTable = ix.faction.Get(client:Team())
 		local character = client:GetCharacter()
@@ -92,7 +95,7 @@ function Schema:PostPlayerLoadout(client)
 			factionTable:OnNameChanged(client, "", character:GetName())
 		end
 	end
-end
+	end
 
 function Schema:PlayerLoadedCharacter(client, character, oldCharacter)
 	if (IsValid(client.ixScanner)) then
