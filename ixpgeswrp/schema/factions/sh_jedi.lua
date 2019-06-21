@@ -14,7 +14,6 @@ FACTION.models = {
 	"models/player/jedi_general_male_03.mdl",
 	"models/player/jedi_general_male_04.mdl",
 	"models/player/jedi_general_male_05.mdl",
-	"models/player/jedi_general_male_06.mdl",
 	"models/player/jedi_general_male_07.mdl",
 	"models/player/jedi_general_male_08.mdl",
 	"models/player/jedi_general_male_09.mdl",

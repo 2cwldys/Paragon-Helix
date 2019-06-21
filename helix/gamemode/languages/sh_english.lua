@@ -2,9 +2,9 @@
 NAME = "English"
 
 LANGUAGE = {
-	helix = "Helix",
+	helix = "PGE | SWRP",
 
-	introTextOne = "fist industries presents",
+	introTextOne = "Paragon Gaming Empire Presents",
 	introTextTwo = "in collaboration with %s",
 	introContinue = "press space to continue",
 

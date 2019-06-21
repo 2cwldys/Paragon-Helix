@@ -43,7 +43,7 @@ function FACTION:OnNameChanged(client, oldValue, value)
 		client:SetArmor(200)
 	elseif (!Schema:IsCombineRank(oldValue, "CMND") and Schema:IsCombineRank(value, "CMND")) then
 		character:JoinClass(CLASS_EMP)
-		character:SetModel("models/tfa/comm/gg/npc_cit_sw_droid_commando.mdl")
+		character:SetModel("models/sally/tkaro/bx_commando_droid.mdl")
 		client:SetMaxHealth(150)
 		client:SetHealth(150)
 		client:SetArmor(150)

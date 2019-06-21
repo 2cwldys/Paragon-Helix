@@ -1,7 +1,7 @@
 
-Schema.name = "CISrp PoC"
-Schema.author = "ixhl2rp_fork"
-Schema.description = "CIS Occupation Roleplay"
+Schema.name = "PGE SWRP"
+Schema.author = "Asimo1234 & 2cwldys"
+Schema.description = "Set in the Outer Rim during the Clone Wars"
 
 -- Include netstream
 ix.util.Include("libs/thirdparty/sh_netstream2.lua")
