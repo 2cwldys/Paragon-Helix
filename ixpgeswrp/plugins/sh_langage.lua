@@ -17,7 +17,8 @@ end)
 ix.flag.Add("B", "Bocce", function(client, bGiven)
 end)
 
-local function CreateLangCommand (commandName, flagName, format)
+-- Language function
+local function CreateLangCommand (commandName, flagName, format, dropFormat)
 	do
 		local COMMAND = {}
 		COMMAND.arguments = ix.type.text
@@ -47,7 +48,7 @@ local function CreateLangCommand (commandName, flagName, format)
 	do
 		local CLASS = {}
 		CLASS.color = ix.config.Get("chatColor")
-		CLASS.format = "%s "..format.." \"%s\""
+		CLASS.format = "%s "..dropFormat
 
 		function CLASS:CanHear(speaker, listener)
 			return (ix.config.Get("chatRange", 280) and !listener:GetCharacter():HasFlags(flagName))
