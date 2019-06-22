@@ -81,6 +81,12 @@ function Schema:PostPlayerLoadout(client)
 			client:SetMaxHealth(150)
 			client:SetHealth(150)
 			client:SetArmor(150)
+		elseif (self:IsCombineRank(client:Name(), "SPEC")) then
+			client:SetArmor(50)
+		elseif (self:IsCombineRank(client:Name(), "HVY")) then
+			client:SetArmor(50)
+		elseif (self:IsCombineRank(client:Name(), "CMD")) then
+			client:SetArmor(50)
 		else
 			client:SetArmor(100)
 		end

@@ -57,9 +57,9 @@ local function CreateLangCommand (commandName, flagName, format, dropFormat)
 	end
 end
 
-CreateLangCommand ("ma", "m", "speaks in Mando'an") -- Command, Flag, Format
-CreateLangCommand ("hu", "h", "speaks in Huttese")
-CreateLangCommand ("bi", "b", "speaks in Binary")
-CreateLangCommand ("jt", "j", "speaks in Jawa's trade language")
-CreateLangCommand ("sy", "w", "speaks in Shyriiwook")
-CreateLangCommand ("bo", "B", "speaks in Bocce")
+CreateLangCommand ("ma", "m", "says in Mando'an", "says something in Mando'an") -- Command, Flag, Format
+CreateLangCommand ("hu", "h", "says in Huttese", "says something in Huttese")
+CreateLangCommand ("bi", "b", "says in Binary", "says something in Binary")
+CreateLangCommand ("jt", "j", "says in Jawa's trade language", "says something in Jawa's trade language")
+CreateLangCommand ("sy", "w", "says in Shyriiwook", "says something in Shyriiwook")
+CreateLangCommand ("bo", "B", "says in Bocce", "says something in Bocce")
