@@ -1,21 +1,6 @@
 
 function Schema:CanPlayerUseBusiness(client, uniqueID)
-	if (client:Team() == FACTION_CITIZEN) then
-		local itemTable = ix.item.list[uniqueID]
-
-		if (itemTable) then
-			if (itemTable.permit) then
-				local character = client:GetCharacter()
-				local inventory = character:GetInventory()
-
-				if (!inventory:HasItem("permit_"..itemTable.permit)) then
-					return false
-				end
-			elseif (itemTable.base ~= "base_permit") then
-				return false
-			end
-		end
-	end
+	return false
 end
 
 -- called when the client wants to view the combine data for the given target
